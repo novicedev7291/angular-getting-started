@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 import { products } from '../products';
-import logger from '../logger';
 
 @Component({
   selector: 'app-product-list',
@@ -12,11 +11,11 @@ export class ProductListComponent {
   products = products;
 
   share() {
-    logger('The product has been shared!');
+    window.alert('The product has been shared!');
   }
 
   onNotify() {
-    logger('You will be notified when sales is live!!!');
+    window.alert('You will be notified when sales is live!!!');
   }
 }
 
